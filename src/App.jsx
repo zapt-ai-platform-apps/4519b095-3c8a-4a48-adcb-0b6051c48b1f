@@ -1,9 +1,18 @@
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import AppRoutes from './app/routes';
+import { AuthProvider } from './modules/auth/context/AuthProvider';
 
-export default function App(){
-    return (
-        <div className="min-h-screen">
-            App Template
+const App = () => {
+  return (
+    <Router>
+      <AuthProvider>
+        <div className="h-full">
+          <AppRoutes />
         </div>
-    )
-}
+      </AuthProvider>
+    </Router>
+  );
+};
+
+export default App;

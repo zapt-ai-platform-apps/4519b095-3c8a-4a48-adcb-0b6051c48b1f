@@ -1,18 +1,23 @@
 {
-    "name": "reactjs-vite-tailwind-vercel",
+    "name": "elite-athlete-training-app",
     "version": "1.0.0",
-    "description": "ReactJS app with Vite, Tailwind",
+    "description": "Elite Athlete Training App",
     "type": "module",
     "scripts": {
         "dev": "vite",
         "build": "vite build",
         "serve": "vite preview",
-        "start": "vite --host"
+        "start": "vite --host",
+        "test": "vitest run"
     },
     "dependencies": {
         "@sentry/browser": "^8.41.0",
+        "@sentry/node": "^8.54.0",
+        "@zapt/zapt-js": "^1.0.21",
+        "clsx": "^2.0.0",
         "react": "^18.2.0",
-        "react-dom": "^18.2.0"
+        "react-dom": "^18.2.0",
+        "react-router-dom": "^6.15.0"
     },
     "devDependencies": {
         "@vitejs/plugin-react": "^4.3.4",
@@ -20,6 +25,7 @@
         "postcss": "^8.4.47",
         "tailwindcss": "^3.4.13",
         "vite": "^5.4.7",
-        "@sentry/vite-plugin": "^2.23.0"
+        "@sentry/vite-plugin": "^2.23.0",
+        "vitest": "^0.34.6"
     }
 }
